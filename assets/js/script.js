@@ -4,12 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Effet de texte tapé
     const typedText = document.querySelector('.typed-text');
     if (typedText) {
-        const text = "Étudiant en BTS SIO SLAM"; // The text was hardcoded in HTML but rewritten by JS. 
-        // Actually, the original code read the text content then cleared it. 
-        // Let's keep the original logic to be safe, but improve it.
-        // Original: const text = typedText.textContent; typedText.textContent = '';
-
-        const textContent = typedText.textContent;
+        const textContent = "Étudiant en BTS SIO SLAM"; // Use fixed text to be safe
         typedText.textContent = '';
         let i = 0;
         function type() {
@@ -20,6 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         setTimeout(type, 500);
+    }
+
+    // Menu Burger Logic
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('is-active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('is-active');
+            });
+        });
     }
 
     // Animation au scroll
@@ -49,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Swiper compétences
-    // Encapsulate in a try-catch or check if Swiper is defined to prevent errors if library fails to load
     if (typeof Swiper !== 'undefined') {
         const skillsSwiper = new Swiper('.mySkillsSwiper', {
             loop: true,
@@ -58,9 +71,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 prevEl: '.mySkillsSwiper .swiper-button-prev',
             },
             slidesPerView: 1,
+            spaceBetween: 20,
             centeredSlides: true,
-            // Add breakpoints for responsiveness if needed, but original code didn't have them. 
-            // Keeping it simple as per instructions "sans modifier quoique ce soit (visually)".
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
         });
     } else {
         console.warn('Swiper library not loaded.');
