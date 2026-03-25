@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Veilles - Nait Ikene Lyes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* ---- Mise en page spécifique à la page Veilles ---- */
+
+        .veille-section {
+            padding: 80px 20px;
+            background: #fff;
+        }
+
+        .veille-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .veille-intro {
+            background: #eef2ff;
+            padding: 30px;
+            border-left: 5px solid #667eea;
+            margin-bottom: 50px;
+            border-radius: 4px;
+        }
+
+        .veille-intro h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .veille-intro p {
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        /* --- Article de Veille --- */
+        .veille-article {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 40px;
+            border: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+
+        .veille-article h3 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .article-meta {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 25px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .article-body p {
+            color: #444;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        /* --- Points clés / Takeaways --- */
+        .important-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .point-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid #764ba2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .point-box h4 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .point-box p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .veille-article { padding: 25px; }
+            .veille-article h3 { font-size: 20px; }
+            .article-meta { flex-direction: column; gap: 5px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="veilles.html">Veilles</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1>Veille Technologique</h1>
+            <p class="hero-description">Analyse et suivi des évolutions du monde numérique et de la cybersécurité.</p>
+        </div>
+    </section>
+
+    <!-- ========== VEILLE CONTENU ========== -->
+    <section class="veille-section">
+        <div class="veille-container">
+
+            <div class="veille-intro">
+                <h2>C'est quoi la veille technologique ?</h2>
+                <p>
+                    La veille technologique consiste à s'informer de façon systématique sur les innovations les plus récentes et les dernières tendances du marché informatique. Pour un développeur, elle est indispensable pour rester compétitif, anticiper les évolutions des langages de programmation et surtout surveiller les nouvelles menaces cybernétiques.
+                </p>
+            </div>
+
+            <div class="veille-article">
+                <h3>Le piratage massif du CROUS : Analyse d'une faille critique</h3>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Mars 2026</span>
+                    <span><i class="fas fa-microchip"></i> Thème : Cybersécurité</span>
+                </div>
+
+                <div class="article-body">
+                    <p>
+                        Une fuite de données d'une ampleur inédite a récemment frappé les serveurs du CROUS (Centre Régional des Œuvres Universitaires et Scolaires). Cet incident a entraîné l'exfiltration de fichiers sensibles appartenant à plus de 600 000 étudiants. Parmi les informations dérobées, on retrouve des données d'identité complètes (noms, prénoms), des coordonnées (adresses postales, numéros de téléphone) ainsi que des coordonnées bancaires (IBAN).
+                    </p>
+                    <p>
+                        L'origine de l'attaque semble provenir d'une vulnérabilité exploitée sur l'une des plateformes de gestion utilisées par l'organisme. Les attaquants ont réussi à contourner les mesures de sécurité pour accéder directement aux bases de données structurées. Cette violation de données soulève des questions majeures sur la protection des infrastructures publiques et la gestion des droits d'accès.
+                    </p>
+                    <p>
+                        Les conséquences pour les victimes sont multiples, allant du risque de phishing ciblé à l'usurpation d'identité. Cet événement rappelle l'importance cruciale pour tout développeur BTS SIO de placer la sécurité au cœur de la conception applicative ("Security by Design") et de respecter strictement les préconisations de la CNIL et du RGPD.
+                    </p>
+                </div>
+
+                <div class="important-points">
+                    <div class="point-box">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Risques identifiés</h4>
+                        <p>Le principal risque réside dans l'utilisation des IBAN pour des tentatives de fraudes massives et le phishing ultra-personnalisé via les données de contact récupérées.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-shield-alt"></i> Mesures de protection</h4>
+                        <p>Renforcement de l'authentification à deux facteurs, chiffrement des données sensibles au repos et audits de sécurité réguliers des plateformes publiques.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-book"></i> Leçon technique</h4>
+                        <p>Importance de la séparation des privilèges et du cloisonnement des serveurs pour limiter le rayon d'impact ("blast radius") en cas d'intrusion réussie.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nait Ikene Lyes</h3>
+                    <p>Étudiant en BTS SIO SLAM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📍 Localisation</h3>
+                    <p>Rennes (35000), France</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📞 Contact</h3>
+                    <a href="tel:0753"><i class="fas fa-mobile"></i> 0753 ** ** **</a>
+                    <a href="mailto:l.naitikene@yahoo.com"><i class="fas fa-envelope"></i> l.naitikene@yahoo.com</a>
+                </div>
+                <div class="footer-section">
+                    <h3>🔗 Réseaux</h3>
+                    <a href="https://www.linkedin.com/in/lyesntkn/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/lyesntkn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nait Ikene Lyes. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

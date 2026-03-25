@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stages - Nait Ikene Lyes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* ---- Mise en page spécifique à la page Stages ---- */
+
+        .stage-section {
+            padding: 70px 20px;
+        }
+
+        .stage-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .stage-section:nth-child(odd) {
+            background: #fff;
+        }
+
+        .stage-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        /* En-tête du stage */
+        .stage-header {
+            border-left: 5px solid #667eea;
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stage-header h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .stage-meta {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .stage-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Titres de sous-section */
+        .stage-section-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #333;
+            margin: 30px 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 6px;
+        }
+
+        /* Paragraphes avec alinéa */
+        .stage-container p {
+            color: #555;
+            line-height: 1.85;
+            text-align: justify;
+            text-indent: 2em;
+            margin-bottom: 0;
+        }
+
+        /* Boutons d'action */
+        .stage-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 22px;
+            background: #0d6efd;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.25s;
+        }
+
+        .btn-primary:hover {
+            background: #0b5ed7;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(13, 110, 253, 0.3);
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 22px;
+            background: transparent;
+            color: #0d6efd;
+            text-decoration: none;
+            border: 2px solid #0d6efd;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.25s;
+        }
+
+        .btn-outline:hover {
+            background: #0d6efd;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .stage-header h2 {
+                font-size: 22px;
+            }
+
+            .stage-meta {
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="veilles.html">Veilles</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1>Stages &amp; Missions</h1>
+            <p class="hero-description">Découvrez mes expériences en entreprise durant ma formation.</p>
+        </div>
+    </section>
+
+    <!-- ========== STAGE 2ÈME ANNÉE ========== -->
+    <section class="stage-section">
+        <div class="stage-container">
+
+            <div class="stage-header">
+                <h2>Stage de deuxième année</h2>
+                <div class="stage-meta">
+                    <span><i class="fas fa-building"></i> Organisation : Sentra</span>
+                    <span><i class="fas fa-calendar-alt"></i> Janvier – Février 2026</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Rennes</span>
+                </div>
+            </div>
+
+            <p class="stage-section-title">Présentation de l'organisme</p>
+            <p>
+                Sentra est un projet porté par un développeur freelance basé à Rennes. Il s'agit d'un application
+                web ( SaaS ). L’objectif principal de Sentra est de réduire drastiquement les erreurs
+                humaines, les oublis de signatures, les fautes orthographiques, les doublons, les incohérences
+                administratives et les risques opérationnels liés à la gestion documentaire.
+            </p>
+
+            <p class="stage-section-title">Contexte et objectifs du stage</p>
+            <p>
+                Ce stage s'est déroulé dans le cadre de ma deuxième année de BTS SIO option SLAM. L'objectif
+                principal était de contribuer au développement du projet Sentra en prenant en charge la création
+                du site vitrine officiel, puis en participant activement à la phase de conception de l'application
+                mobile. Ce stage m'a permis de travailler en autonomie sur l'ensemble du cycle de vie d'un site
+                web, de la maquette à la mise en ligne, tout en m'initiant aux contraintes du développement mobile.
+            </p>
+
+            <p class="stage-section-title">Missions réalisées</p>
+            <p>
+                J'ai d'abord conçu et développé le site vitrine de Sentra de A à Z : définition de l'architecture
+                des pages, intégration du design, rédaction du contenu et optimisation SEO (balises meta, plan de
+                site, données structurées). J'ai ensuite travaillé sur l'accessibilité et les performances du site
+                afin d'assurer une bonne expérience sur tous les appareils. En fin de stage, j'ai participé aux
+                réunions de prospection, et à la mise en place de la stratégie de communication.
+            </p>
+
+            <p class="stage-section-title">Compétences développées</p>
+            <p>
+                Ce stage m'a permis de consolider mes compétences en développement web front-end (HTML, CSS,
+                JavaScript) et en référencement naturel. J'ai également développé mon sens de l'autonomie et de
+                la communication en travaillant directement avec le porteur du projet, sans encadrement
+                hiérarchique intermédiaire.
+            </p>
+
+            <div class="stage-actions">
+                <a href="https://getsentra.fr/" target="_blank" class="btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Visiter le site de l'organisme
+                </a>
+                <a href="#" class="btn-outline">
+                    <i class="fas fa-file-pdf"></i> Rapport de stage
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== STAGE 1ÈRE ANNÉE ========== -->
+    <section class="stage-section">
+        <div class="stage-container">
+
+            <div class="stage-header">
+                <h2>Stage de première année</h2>
+                <div class="stage-meta">
+                    <span><i class="fas fa-building"></i> Organisation : France Logidev</span>
+                    <span><i class="fas fa-calendar-alt"></i> Mai – Juin 2025</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Paris</span>
+                </div>
+            </div>
+
+            <p class="stage-section-title">Présentation de l'organisme</p>
+            <p>
+                France Logidev est une société éditrice de logiciels CRM spécialisés pour les courtiers en
+                assurance. L'entreprise développe des solutions sur mesure permettant aux professionnels du
+                secteur de gérer efficacement leurs portefeuilles clients, leurs contrats et leurs interactions
+                commerciales. Elle intervient principalement sur des marchés B2B à forte exigence métier.
+            </p>
+
+            <p class="stage-section-title">Contexte et objectifs du stage</p>
+            <p>
+                Effectué en fin de première année de BTS SIO, ce stage visait à m'immerger dans un environnement
+                professionnel de développement logiciel. La mission principale consistait à participer à la
+                création d'une version mobile du CRM, adaptée aux tablettes, afin d'étendre l'accessibilité de
+                l'outil pour les courtiers en déplacement. Ce stage a été une première expérience concrète dans
+                un contexte de développement en équipe avec des contraintes métier réelles.
+            </p>
+
+            <p class="stage-section-title">Missions réalisées</p>
+            <p>
+                J'ai participé à la phase de maquettage de l'application mobile sous Figma, en traduisant les
+                fonctionnalités existantes du CRM en interfaces adaptées aux tablettes. J'ai ensuite contribué
+                au développement front-end de l'application, en intégrant les maquettes validées et en assurant
+                la cohérence visuelle avec la version bureau. J'ai également réalisé des tests fonctionnels sur
+                différents appareils et corrigé les anomalies identifiées lors des recettes internes.
+            </p>
+
+            <p class="stage-section-title">Compétences développées</p>
+            <p>
+                Ce stage a été déterminant pour ma montée en compétences sur les outils de prototypage (Figma)
+                et le développement front-end dans un environnement professionnel structuré. J'ai acquis une
+                meilleure compréhension du cycle de développement logiciel en entreprise (spécifications,
+                maquettes, développement, tests, recette) et appris à communiquer efficacement au sein d'une
+                équipe technique.
+            </p>
+
+            <div class="stage-actions">
+                <a href="https://francelogidev.fr/" target="_blank" class="btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Visiter le site de l'organisme
+                </a>
+                <a href="#" class="btn-outline">
+                    <i class="fas fa-file-pdf"></i> Rapport de stage
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== FOOTER / CONTACT ========== -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+
+                <div class="footer-section">
+                    <h3>Nait Ikene Lyes</h3>
+                    <p>Étudiant en BTS SIO SLAM</p>
+                    <p>À la recherche d'opportunités professionnelles</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>📍 Localisation</h3>
+                    <p>Rennes (35000), France</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>📞 Contact</h3>
+                    <a href="tel:0753"><i class="fas fa-mobile"></i> 0753 ** ** **</a>
+                    <a href="mailto:l.naitikene@yahoo.com"><i class="fas fa-envelope"></i> l.naitikene@yahoo.com</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>🔗 Réseaux</h3>
+                    <a href="https://www.linkedin.com/in/lyesntkn/" target="_blank"><i class="fab fa-linkedin"></i>
+                        LinkedIn</a>
+                    <a href="https://github.com/lyesntkn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nait Ikene Lyes. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

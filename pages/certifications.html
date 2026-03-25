@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Certifications - Nait Ikene Lyes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* ---- Mise en page spécifique à la page Certifications ---- */
+
+        .cert-section {
+            padding: 80px 20px;
+            background: #fff;
+        }
+
+        .cert-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .cert-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .cert-intro h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .cert-intro p {
+            font-size: 18px;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        /* --- Grid des Certifications --- */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .cert-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-10px);
+            background: #fff;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .cert-icon {
+            font-size: 50px;
+            color: #667eea;
+            margin-bottom: 25px;
+        }
+
+        .cert-card h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .cert-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cert-actions {
+            margin-top: auto;
+        }
+
+        .btn-cert {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .btn-cert:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(118, 75, 162, 0.3);
+        }
+
+        @media (max-width: 900px) {
+            .cert-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .cert-grid {
+                gap: 10px;
+            }
+
+            .cert-card {
+                padding: 15px 10px;
+            }
+
+            .cert-card p {
+                font-size: 13px;
+                text-indent: 0;
+            }
+
+            .cert-card h3 {
+                font-size: 16px;
+            }
+
+            .cert-icon {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            .cert-intro h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="veilles.html">Veilles</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1>Mes Certifications</h1>
+            <p class="hero-description">Diplômes et attestations de compétences obtenus durant mon parcours.</p>
+        </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS ========== -->
+    <section class="cert-section">
+        <div class="cert-container">
+
+            <div class="cert-intro">
+                <h2>Certifications &amp; Formations</h2>
+                <p>Certifications obtenues durant ma scolarité et mes projets personnels.</p>
+            </div>
+
+            <div class="cert-grid">
+
+                <!-- CISCO -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Cisco Networking</h3>
+                    <p>
+                        Formation approfondie sur les fondamentaux des réseaux, l'administration de routeurs et
+                        commutateurs, ainsi que la configuration de protocoles LAN/WAN. Cette certification valide ma
+                        capacité à concevoir et dépanner des infrastructures réseau complexes.
+                    </p>
+                    <div class="cert-actions">
+                        <a href="#" class="btn-cert">
+                            <i class="fas fa-medal"></i> Voir le certificat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MOOC CNIL -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>MOOC de la CNIL - RGPD</h3>
+                    <p>
+                        Attestation de réussite du MOOC "L'Atelier RGPD". Cette formation m'a permis de maîtriser les
+                        principes fondamentaux du Règlement Général sur la Protection des Données et d'apprendre à
+                        mettre en œuvre la conformité numérique au sein des projets de développement logiciel.
+                    </p>
+                    <div class="cert-actions">
+                        <a href="#" class="btn-cert">
+                            <i class="fas fa-medal"></i> Voir l'attestation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROOTME PRO -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>RootMe Pro</h3>
+                    <p>
+                        Validation de défis techniques en cybersécurité sur la plateforme RootMe Pro. Cette
+                        reconnaissance atteste de mes compétences en exploitation de vulnérabilités, sécurité web et
+                        analyse système dans un contexte professionnel de test d'intrusion.
+                    </p>
+                    <div class="cert-actions">
+                        <a href="#" class="btn-cert">
+                            <i class="fas fa-medal"></i> Voir le badge
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PIX -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Certification PIX</h3>
+                    <p>
+                        Certification nationale des compétences numériques.
+                    </p>
+                    <div class="cert-actions">
+                        <a href="#" class="btn-cert">
+                            <i class="fas fa-medal"></i> Voir le certificat
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nait Ikene Lyes</h3>
+                    <p>Étudiant en BTS SIO SLAM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📍 Localisation</h3>
+                    <p>Rennes (35000), France</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📞 Contact</h3>
+                    <a href="tel:0753"><i class="fas fa-mobile"></i> 0753 ** ** **</a>
+                    <a href="mailto:l.naitikene@yahoo.com"><i class="fas fa-envelope"></i> l.naitikene@yahoo.com</a>
+                </div>
+                <div class="footer-section">
+                    <h3>🔗 Réseaux</h3>
+                    <a href="https://www.linkedin.com/in/lyesntkn/" target="_blank"><i class="fab fa-linkedin"></i>
+                        LinkedIn</a>
+                    <a href="https://github.com/lyesntkn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nait Ikene Lyes. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

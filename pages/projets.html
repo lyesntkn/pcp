@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projets - Nait Ikene Lyes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* ---- Mise en page spécifique à la page Projets ---- */
+
+        .project-section {
+            padding: 60px 20px;
+        }
+
+        .project-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .project-section:nth-child(odd) {
+            background: #fff;
+        }
+
+        .project-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+
+        .project-content {
+            padding: 30px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .project-title h2 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .project-tag {
+            display: inline-block;
+            padding: 6px 14px;
+            background: #eef2ff;
+            color: #667eea;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .project-description {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        /* --- Accordéon pour les Missions --- */
+        .missions-accordion {
+            margin: 25px 0;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 15px 20px;
+            background: #fcfcfc;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: #333;
+            transition: background 0.3s;
+            text-align: left;
+        }
+
+        .accordion-header:hover {
+            background: #f1f4ff;
+        }
+
+        .accordion-content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background: #fff;
+        }
+
+        .accordion-item.active .accordion-content {
+            padding: 20px;
+            max-height: 1000px; /* Grande valeur pour permettre l'expansion */
+        }
+
+        .accordion-item.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        .fa-chevron-down {
+            transition: transform 0.3s;
+            font-size: 14px;
+            color: #667eea;
+        }
+
+        /* --- Actions --- */
+        .project-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .btn-project {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .btn-visit {
+            background: #0d6efd;
+            color: white;
+        }
+
+        .btn-visit:hover {
+            background: #0b5ed7;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+        }
+
+        .btn-report {
+            background: white;
+            color: #0d6efd;
+            border: 2px solid #0d6efd;
+        }
+
+        .btn-report:hover {
+            background: #0d6efd;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .project-header { flex-direction: column; align-items: flex-start; }
+            .project-title h2 { font-size: 22px; }
+            .btn-project { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="veilles.html">Veilles</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1>Mes Projets &amp; Réalisations</h1>
+            <p class="hero-description">Travaux réalisés en entreprise et durant mon parcours de formation.</p>
+        </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section class="project-section">
+        <div class="project-container">
+
+            <!-- PROJET 1 : SENTRA -->
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <h2>Sentra - Site Vitrine &amp; SEO</h2>
+                            <span class="project-tag">Web &amp; SEO</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        Réalisation intégrale du site vitrine pour le projet Sentra. L'objectif était de créer une interface moderne, fluide et optimisée pour le référencement naturel (SEO) afin de maximiser la visibilité du projet avant le lancement de l'application mobile. J'ai pris en charge toute la partie front-end ainsi que la stratégie d'indexation.
+                    </p>
+
+                    <div class="missions-accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                Consulter les missions détaillées
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <!-- Contenu à détailler plus tard par l'utilisateur -->
+                                <p>Détails des missions à venir...</p>
+                                <ul style="margin-left: 40px; color: #666; padding-top: 10px;">
+                                    <li>Développement de la structure HTML5/CSS3.</li>
+                                    <li>Mise en place d'une stratégie SEO (Meta tags, Open Graph, Sitemap).</li>
+                                    <li>Optimisation des performances (Lighthouse scores).</li>
+                                    <li>Gestion du responsive design pour mobile et tablette.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://getsentra.fr/" target="_blank" class="btn-project btn-visit">
+                            <i class="fas fa-external-link-alt"></i> Visiter le site
+                        </a>
+                        <a href="#" class="btn-project btn-report">
+                            <i class="fas fa-cloud"></i> Rapport (OneDrive)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 2 : FRANCE LOGIDEV -->
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <h2>CRM Mobile - France Logidev</h2>
+                            <span class="project-tag">UI/UX &amp; Front-end</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        Participation au développement de la version mobile/tablette d'un CRM métier destiné aux courtiers en assurance. Mon travail a consisté à adapter des interfaces complexes pour une utilisation tactile tout en conservant la richesse fonctionnelle de la version bureau.
+                    </p>
+
+                    <div class="missions-accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                Consulter les missions détaillées
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <!-- Contenu à détailler plus tard par l'utilisateur -->
+                                <p>Détails des missions à venir...</p>
+                                <ul style="margin-left: 40px; color: #666; padding-top: 10px;">
+                                    <li>Maquettage haute fidélité sur Figma.</li>
+                                    <li>Intégration d'interfaces adaptatives pour tablettes.</li>
+                                    <li>Correction de bugs et tests utilisateurs sur terminaux mobiles.</li>
+                                    <li>Collaboration directe avec l'équipe de développement back-end.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://francelogidev.fr/" target="_blank" class="btn-project btn-visit">
+                            <i class="fas fa-external-link-alt"></i> Visiter l'organisme
+                        </a>
+                        <a href="#" class="btn-project btn-report">
+                            <i class="fas fa-cloud"></i> Rapport (OneDrive)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nait Ikene Lyes</h3>
+                    <p>Étudiant en BTS SIO SLAM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📍 Localisation</h3>
+                    <p>Rennes (35000), France</p>
+                </div>
+                <div class="footer-section">
+                    <h3>📞 Contact</h3>
+                    <a href="tel:0753"><i class="fas fa-mobile"></i> 0753 ** ** **</a>
+                    <a href="mailto:l.naitikene@yahoo.com"><i class="fas fa-envelope"></i> l.naitikene@yahoo.com</a>
+                </div>
+                <div class="footer-section">
+                    <h3>🔗 Réseaux</h3>
+                    <a href="https://www.linkedin.com/in/lyesntkn/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/lyesntkn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nait Ikene Lyes. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Script pour l'accordéon des missions
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

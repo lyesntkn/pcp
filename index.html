@@ -4,98 +4,96 @@
 <head>
     <meta charset="utf-8">
     <title>Nait Ikene Lyes - Portfolio BTS SIO SLAM</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description"
-        content="Portfolio de Nait Ikene Lyes, étudiant en BTS SIO option SLAM au lycée Victor et Hélène Basch (VHB) à Rennes. Spécialiste PHP, Symfony, Python et JavaScript.">
-    <meta name="keywords"
-        content="Full-stack, PHP, Symfony, Python, JavaScript, React, SQL, Git, GitHub, VS Code, Cisco Packet Tracer, Azure, AWS, BTS SIO Rennes, Épreuves E4 et E6 BTS SIO, lycée vhb rennes, vhb rennes, lycée victor et helene basch, Veille technologique, Gestion de projet informatique, Tableau de synthèse des compétences, Stage informatique Rennes, rennes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Nait Ikene Lyes, étudiant en BTS SIO option SLAM au lycée Victor et Hélène Basch (VHB) à Rennes. Spécialiste PHP, Symfony, Python et JavaScript.">
+    <meta name="keywords" content="Full-stack, PHP, Symfony, Python, JavaScript, React, SQL, Git, GitHub, VS Code, Cisco Packet Tracer, Azure, AWS, BTS SIO Rennes, Épreuves E4 et E6 BTS SIO, lycée vhb rennes, vhb rennes, lycée victor et helene basch, Veille technologique, Gestion de projet informatique, Tableau de synthèse des compétences, Stage informatique Rennes, rennes">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lyesntkn.fr/">
     <meta property="og:title" content="Nait Ikene Lyes - Portfolio BTS SIO SLAM">
-    <meta property="og:description"
-        content="Découvrez mon parcours, mes compétences (PHP, Symfony, Python) et mes projets en développement web au lycée VHB Rennes.">
+    <meta property="og:description" content="Découvrez mon parcours, mes compétences (PHP, Symfony, Python) et mes projets en développement web au lycée VHB Rennes.">
     <meta property="og:image" content="https://lyesntkn.fr/assets/img/cv.png">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nait Ikene Lyes",
-      "url": "https://lyesntkn.fr/",
-      "jobTitle": "Étudiant en BTS SIO SLAM",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Rennes",
-        "postalCode": "35000",
-        "addressCountry": "FR"
-      },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Lycée Victor et Hélène Basch (VHB)"
-      },
-      "knowsAbout": ["Full-stack", "PHP", "Symfony", "Python", "JavaScript", "React", "SQL", "Git", "Veille technologique"]
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nait Ikene Lyes",
+        "url": "https://lyesntkn.fr/",
+        "jobTitle": "Étudiant en BTS SIO SLAM",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rennes",
+            "postalCode": "35000",
+            "addressCountry": "FR"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Lycée Victor et Hélène Basch (VHB)"
+        },
+        "knowsAbout": ["Full-stack", "PHP", "Symfony", "Python", "JavaScript", "React", "SQL", "Git", "Veille technologique"]
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
 
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ========== NAVIGATION ========== -->
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#home" class="navbar-brand">Portefeuille de compétences</a>
-
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-
             <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#bts">Tableau de compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/projets.html">Projets</a></li>
+                <li><a href="pages/stages.html">Stages</a></li>
+                <li><a href="pages/veilles.html">Veilles</a></li>
+                <li><a href="pages/certifications.html">Certifications</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- ========== HERO ========== -->
     <section class="hero" id="home">
         <div class="hero-container">
             <p>Bienvenu sur mon portfolio</p>
             <h1>Nait Ikene Lyes</h1>
             <div class="typed-text">Étudiant en BTS SIO SLAM</div>
-            <p class="hero-description">Passionné par le développement web et mobile, je crée des solutions modernes et
-                performantes adaptées à vos besoins.</p>
+            <p class="hero-description">Passionné par le développement, je crée des solutions modernes et performantes adaptées à vos besoins.</p>
             <div class="hero-btn">
                 <a href="#contact" class="btn">Me Contacter</a>
             </div>
         </div>
     </section>
 
-    <!-- About -->
+    <!-- ========== À PROPOS ========== -->
     <section class="about" id="about">
         <div class="about-container">
+
+            <!-- Aperçu CV (desktop) -->
             <div class="cv-display">
                 <div class="cv-frame">
-                    <img src="assets/img/cv.png" alt="Aperçu du CV" class="cv-img">
+                    <img src="assets/img/cv.png?v=2" alt="Aperçu du CV" class="cv-img">
                 </div>
-                <a href="assets/docs/cv.pdf" download="cv.pdf" class="cv-download-btn">
+                <a href="assets/docs/cv.pdf?v=2" download="cv.pdf" class="cv-download-btn">
                     <i class="fas fa-download"></i> Télécharger le CV
                 </a>
             </div>
 
+            <!-- Texte de présentation -->
             <div class="about-content">
                 <p class="about-intro">Présentation</p>
                 <h2>A propos de moi</h2>
@@ -108,28 +106,34 @@
                     Je reste ouvert à toute proposition de stage, d'alternance ou d'opportunité professionnelle.
                     Je suis joignable par mail et disponible pour toute prise de contact ou échange complémentaire.<br>
                     Contactez moi directement ici :
-                    <a href="mailto:l.naitikene@yahoo.com"
-                        class="email-link"><strong><u>l.naitikene@yahoo.com</u></strong></a>
+                    <a href="mailto:l.naitikene@yahoo.com" class="email-link"><strong><u>l.naitikene@yahoo.com</u></strong></a>
                     <u>L[point]NAITIKENE[at]YAHOO[point]COM</u>
                 </p>
+
                 <h2>A propos de mon portfolio</h2>
                 <p class="about-text">
-                    Dans le cadre de mon BTS SIO, j’ai réalisé ce portfolio afin de présenter mon parcours scolaire et
-                    professionnel ainsi que les compétences que j’ai acquises au cours de ma formation.
+                    Dans le cadre de mon BTS SIO, j'ai réalisé ce portfolio afin de présenter mon parcours scolaire et
+                    professionnel ainsi que les compétences que j'ai acquises au cours de ma formation.
                     Ce portfolio est hébergé en ligne, ce qui me permet de le rendre facilement accessible aux
                     enseignants et aux professionnels.<br>
                     Il regroupe mes projets, mes stages, mes expériences professionnelles ainsi que mes connaissances
                     techniques et juridiques en informatique.<br>
                     La création de ce portfolio me permet de valoriser mon évolution, de garder une trace de mon travail
-                    et de démontrer ma motivation pour les métiers de l’informatique.<br>
-                    Il constitue également un support important pour l’épreuve du BTS SIO, car il illustre concrètement
+                    et de démontrer ma motivation pour les métiers de l'informatique.<br>
+                    Il constitue également un support important pour l'épreuve du BTS SIO, car il illustre concrètement
                     mon parcours et mes compétences.
                 </p>
+
+                <!-- Bouton téléchargement CV (mobile uniquement) -->
+                <a href="assets/docs/cv.pdf?v=2" download="cv.pdf" class="cv-download-btn cv-download-mobile">
+                    <i class="fas fa-download"></i> Télécharger le CV
+                </a>
             </div>
+
         </div>
     </section>
 
-    <!-- BTS -->
+    <!-- ========== BTS SIO ========== -->
     <section class="bts-section" id="bts">
         <div class="section-container">
             <div class="section-title">
@@ -144,46 +148,41 @@
 
             <div class="bts-options">
                 <div class="option-card">
-                    <h3>
-                        <i class="fas fa-code"></i> Option SLAM
-                    </h3>
+                    <h3><i class="fas fa-code"></i> Option SLAM</h3>
                     <p>
                         L'option Solutions logicielles et applications métiers (SLAM) forme des spécialistes du
                         développement de logiciels et d'applications.
                     </p>
                     <ul>
-                        <li><i class="fas fa-check"></i> Conception et développement d'applications web et logicielles
-                        </li>
+                        <li><i class="fas fa-check"></i> Conception et développement d'applications web et logicielles</li>
                         <li><i class="fas fa-check"></i> Création et gestion de bases de données</li>
                         <li><i class="fas fa-check"></i> Tests, correction et maintenance des applications</li>
-                        <li><i class="fas fa-check"></i> Développement de solutions adaptées aux besoins des entreprises
-                        </li>
+                        <li><i class="fas fa-check"></i> Développement de solutions adaptées aux besoins des entreprises</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Timeline -->
+    <!-- ========== PARCOURS (TIMELINE) ========== -->
     <section class="experience">
         <div class="timeline-container">
             <div class="section-title">
-                <h2>Mon Parcours Scolaire & Professionnel</h2>
+                <h2>Mon Parcours Scolaire &amp; Professionnel</h2>
             </div>
 
-            <h3 class="timeline-subtitle"><strong><u>Parcours
-                        scolaire</u></strong></h3>
+            <!-- Parcours scolaire -->
+            <h3 class="timeline-subtitle"><strong><u>Parcours scolaire</u></strong></h3>
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-date-left">2024 - 2026</div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>BTS SIO, Rennes</h3>
                         <h4>Option SLAM</h4>
-                        <p>Étudiant en BTS Services informatiques aux organisations (SIO), option Solutions logicielles
-                            et applications métiers (SLAM).</p>
-                        <a href="https://lycee-basch.fr/le-superieur-2/bts-sio/" target="_blank"
-                            class="timeline-btn">Site du lycée</a>
+                        <p>Étudiant en BTS Services informatiques aux organisations (SIO), option Solutions logicielles et applications métiers (SLAM).</p>
+                        <a href="https://lycee-basch.fr/le-superieur-2/bts-sio/" target="_blank" class="timeline-btn">Site du lycée</a>
                     </div>
                 </div>
 
@@ -193,30 +192,28 @@
                     <div class="timeline-content">
                         <h3>Baccalauréat Général</h3>
                         <h4>Lycée internationnal Alexandre Dumas, Alger</h4>
-                        <p>Baccalauréat français international en Mathématiques & Sciences de la vie et de la terre
-                            (SVT).<br>Mention obtenue : Bien.</p>
+                        <p>Baccalauréat français international en Mathématiques &amp; Sciences de la vie et de la terre (SVT).<br>Mention obtenue : Bien.</p>
                         <a href="https://liad-alger.fr/" target="_blank" class="timeline-btn">Site du lycée</a>
                     </div>
                 </div>
+
             </div>
 
-            <h3 class="timeline-subtitle"><strong><u>Parcours
-                        Professionnel</u></strong></h3>
+            <!-- Parcours professionnel -->
+            <h3 class="timeline-subtitle"><strong><u>Parcours Professionnel</u></strong></h3>
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-date-left">Janvier - Février 2026</div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Stage, Rennes</h3>
                         <h4>Sentra</h4>
-                        <p>Stage chez un développeur freelance travaillant sur une application mobile nommée Sentra.
-                            Conception et développement du site vitrine, puis participation à la conception de
-                            l'application mobile.</p>
+                        <p>Stage chez un développeur freelance travaillant sur une application mobile nommée Sentra. Conception et développement du site vitrine, puis participation à la conception de l'application mobile.</p>
                         <ul>
-                            <li><i class="fas fa-check"></i> Création du site vitrine (structure, design et contenu)
-                            </li>
+                            <li><i class="fas fa-check"></i> Création du site vitrine (structure, design et contenu)</li>
                             <li><i class="fas fa-check"></i> Mise en place du référencement naturel (SEO)</li>
-                            <li><i class="fas fa-check"></i> Optimisation des performances et de l’accessibilité</li>
+                            <li><i class="fas fa-check"></i> Optimisation des performances et de l'accessibilité</li>
                             <li><i class="fas fa-check"></i> Participation à la conception de l'application Sentra</li>
                         </ul>
                         <a href="https://getsentra.fr/" target="_blank" class="timeline-btn">Site de l'organisme</a>
@@ -229,31 +226,32 @@
                     <div class="timeline-content">
                         <h3>Stage, Paris</h3>
                         <h4>France Logidev</h4>
-                        <p>Stage chez France Logidev, société spécialisée dans les logiciels CRM pour courtiers en
-                            assurance. Participation à la création d'une application mobile du CRM pour tablette.</p>
+                        <p>Stage chez France Logidev, société spécialisée dans les logiciels CRM pour courtiers en assurance. Participation à la création d'une application mobile du CRM pour tablette.</p>
                         <ul>
-                            <li><i class="fas fa-check"></i> Maquettage de l’application mobile</li>
-                            <li><i class="fas fa-check"></i> Développement front-end de l’application</li>
+                            <li><i class="fas fa-check"></i> Maquettage de l'application mobile</li>
+                            <li><i class="fas fa-check"></i> Développement front-end de l'application</li>
                             <li><i class="fas fa-check"></i> Tests et correction de bugs</li>
                         </ul>
                         <a href="https://francelogidev.fr/" target="_blank" class="timeline-btn">Site de l'organisme</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Skills slider -->
+    <!-- ========== COMPÉTENCES ========== -->
     <section class="skills" id="skills">
         <div class="section-container">
             <div class="section-title">
                 <h2>Mes Compétences</h2>
-                <p><strong><u> Langages et technologies maîtrisés</u></strong></p>
+                <p><strong><u>Langages et technologies maîtrisés</u></strong></p>
             </div>
 
             <!-- SLIDER LANGAGES -->
             <div class="swiper mySkillsSwiper">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
                         <div class="skill-card">
                             <div class="skill-image">
@@ -304,18 +302,36 @@
                         </div>
                     </div>
 
-                </div>
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <div class="skill-image">
+                                <img loading="lazy" src="assets/img/mysql.png" alt="MySQL">
+                            </div>
+                            <h3>MySQL</h3>
+                            <p>Conception, interrogation et administration de bases de données relationnelles.</p>
+                        </div>
+                    </div>
 
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <div class="skill-image">
+                                <img loading="lazy" src="assets/img/csharp.png" alt="C#">
+                            </div>
+                            <h3>C#</h3>
+                            <p>Développement d'applications orientées objet avec le framework .NET.</p>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
 
-            <!-- TITRE OUTILS -->
+            <!-- SLIDER OUTILS -->
             <div class="section-title mt-60">
                 <p><strong><u>Outils et logiciels maîtrisés</u></strong></p>
             </div>
 
-            <!-- SLIDER OUTILS -->
             <div class="swiper mySkillsSwiper">
                 <div class="swiper-wrapper">
 
@@ -362,13 +378,13 @@
                     <div class="swiper-slide">
                         <div class="skill-card">
                             <div class="skill-image">
-                                <img loading="lazy" src="assets/img/xamp.png" alt="Xampp">
+                                <img loading="lazy" src="assets/img/xamp.png" alt="XAMPP">
                             </div>
-                            <h3>Xampp</h3>
-                            <p>Mise en place et utilisation d’un environnement
-                                de développement web avec XAMPP.</p>
+                            <h3>XAMPP</h3>
+                            <p>Mise en place et utilisation d'un environnement de développement web local.</p>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="skill-card">
                             <div class="skill-image">
@@ -379,48 +395,62 @@
                         </div>
                     </div>
 
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <div class="skill-image">
+                                <img loading="lazy" src="assets/img/wireshark.png" alt="Wireshark">
+                            </div>
+                            <h3>Wireshark</h3>
+                            <p>Analyse et capture de paquets réseau pour le diagnostic et la sécurité.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <div class="skill-image">
+                                <img loading="lazy" src="assets/img/vmware.svg" alt="VMware vSphere">
+                            </div>
+                            <h3>VMware vSphere</h3>
+                            <p>Virtualisation et gestion d'infrastructures avec VMware vSphere.</p>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
+
         </div>
     </section>
 
-
-
-
-    <!-- Footer -->
+    <!-- ========== FOOTER / CONTACT ========== -->
     <footer class="footer" id="contact">
         <div class="footer-container">
             <div class="footer-content">
+
                 <div class="footer-section">
                     <h3>Nait Ikene Lyes</h3>
                     <p>Étudiant en BTS SIO SLAM</p>
                     <p>À la recherche d'opportunités professionnelles</p>
                 </div>
+
                 <div class="footer-section">
                     <h3>📍 Localisation</h3>
                     <p>Rennes (35000), France</p>
                 </div>
+
                 <div class="footer-section">
                     <h3>📞 Contact</h3>
-                    <a href="tel:0753">
-                        <i class="fas fa-mobile"></i> 0753 ** ** **
-                    </a>
-                    <a href="mailto:l.naitikene@yahoo.com">
-                        <i class="fas fa-envelope"></i> l.naitikene@yahoo.com
-                    </a>
+                    <a href="tel:0753"><i class="fas fa-mobile"></i> 0753 ** ** **</a>
+                    <a href="mailto:l.naitikene@yahoo.com"><i class="fas fa-envelope"></i> l.naitikene@yahoo.com</a>
                 </div>
+
                 <div class="footer-section">
                     <h3>🔗 Réseaux</h3>
-                    <a href="https://www.linkedin.com/in/lyesntkn/" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/lyesntkn" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
+                    <a href="https://www.linkedin.com/in/lyesntkn/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/lyesntkn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 </div>
+
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Nait Ikene Lyes. Tous droits réservés.</p>
@@ -428,9 +458,8 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- ========== SCRIPTS ========== -->
     <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
-
     <script src="assets/js/script.js"></script>
 
 </body>
