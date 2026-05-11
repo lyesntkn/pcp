@@ -161,37 +161,190 @@
             </div>
 
             <div class="veille-article">
-                <h3>Le piratage massif du CROUS : Analyse d'une faille critique</h3>
+                <h3>Piratage du CROUS : 774 000 étudiants touchés par le groupe DumpSec</h3>
                 <div class="article-meta">
                     <span><i class="far fa-calendar-alt"></i> Mars 2026</span>
                     <span><i class="fas fa-microchip"></i> Thème : Cybersécurité</span>
+                    <span><i class="fas fa-graduation-cap"></i> Secteur éducatif</span>
                 </div>
 
                 <div class="article-body">
                     <p>
-                        Une fuite de données d'une ampleur inédite a récemment frappé les serveurs du CROUS (Centre Régional des Œuvres Universitaires et Scolaires). Cet incident a entraîné l'exfiltration de fichiers sensibles appartenant à plus de 600 000 étudiants. Parmi les informations dérobées, on retrouve des données d'identité complètes (noms, prénoms), des coordonnées (adresses postales, numéros de téléphone) ainsi que des coordonnées bancaires (IBAN).
+                        Le 23 mars 2026, le CROUS (Centre Régional des Œuvres Universitaires et Scolaires) a été victime d'une cyberattaque ciblant sa plateforme de prise de rendez-vous <em>mesrdv.etudiant.gouv.fr</em>. L'incident a exposé les données de <strong>774 000 étudiants et anciens étudiants</strong> sur une période couvrant les dix dernières années. Le groupe de cybercriminels <strong>DumpSec</strong> a revendiqué l'attaque, affirmant avoir dérobé environ <strong>198 gigaoctets</strong> de données.
                     </p>
                     <p>
-                        L'origine de l'attaque semble provenir d'une vulnérabilité exploitée sur l'une des plateformes de gestion utilisées par l'organisme. Les attaquants ont réussi à contourner les mesures de sécurité pour accéder directement aux bases de données structurées. Cette violation de données soulève des questions majeures sur la protection des infrastructures publiques et la gestion des droits d'accès.
+                        Le périmètre de la fuite varie selon les profils. Pour <strong>635 000 personnes</strong>, les données exposées se limitent aux noms, prénoms, adresses e-mail, ainsi qu'à l'objet et la date des rendez-vous. Pour <strong>139 000 autres personnes</strong>, la situation est plus grave : des pièces jointes déposées sur la plateforme ont également été exfiltrées, pouvant inclure des documents d'identité, certificats de scolarité ou fiches de paie. Dès la détection de l'incident, l'accès à la plateforme a été suspendu et le CNOUS a déposé plainte tout en effectuant un signalement auprès de la CNIL et de l'ANSSI.
                     </p>
                     <p>
-                        Les conséquences pour les victimes sont multiples, allant du risque de phishing ciblé à l'usurpation d'identité. Cet événement rappelle l'importance cruciale pour tout développeur BTS SIO de placer la sécurité au cœur de la conception applicative ("Security by Design") et de respecter strictement les préconisations de la CNIL et du RGPD.
+                        Cet incident s'inscrit dans un contexte de recrudescence d'attaques ciblant le secteur éducatif français. Il rappelle l'importance cruciale pour tout développeur BTS SIO de placer la sécurité au cœur de la conception applicative ("Security by Design") et de respecter strictement les préconisations de la CNIL et du RGPD.
                     </p>
                 </div>
 
                 <div class="important-points">
                     <div class="point-box">
                         <h4><i class="fas fa-exclamation-triangle"></i> Risques identifiés</h4>
-                        <p>Le principal risque réside dans l'utilisation des IBAN pour des tentatives de fraudes massives et le phishing ultra-personnalisé via les données de contact récupérées.</p>
+                        <p>Pour les 139 000 victimes dont les pièces jointes ont été dérobées, le risque d'usurpation d'identité est critique. Pour les autres, le phishing ultra-personnalisé reste la menace principale.</p>
                     </div>
                     <div class="point-box">
                         <h4><i class="fas fa-shield-alt"></i> Mesures de protection</h4>
-                        <p>Renforcement de l'authentification à deux facteurs, chiffrement des données sensibles au repos et audits de sécurité réguliers des plateformes publiques.</p>
+                        <p>Ne jamais stocker de pièces justificatives sans chiffrement fort. Appliquer une durée de conservation limitée et supprimer les fichiers dès que l'usage est terminé (principe de minimisation RGPD).</p>
                     </div>
                     <div class="point-box">
                         <h4><i class="fas fa-book"></i> Leçon technique</h4>
-                        <p>Importance de la séparation des privilèges et du cloisonnement des serveurs pour limiter le rayon d'impact ("blast radius") en cas d'intrusion réussie.</p>
+                        <p>Importance du cloisonnement des données sensibles et de la mise en place de systèmes de détection d'intrusion (IDS) capables d'alerter rapidement lors d'exfiltrations massives.</p>
                     </div>
+                </div>
+
+                <div style="margin-top: 30px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid #e9ecef;">
+                    <p style="font-weight: 700; color: #333; margin-bottom: 12px; text-indent: 0;"><i class="fas fa-link" style="color: #667eea; margin-right: 8px;"></i>Sources</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="https://www.liberation.fr" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>liberation.fr — Cyberattaque du CNOUS : 774 000 étudiants concernés</a></li>
+                        <li><a href="https://www.lesnumeriques.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>lesnumeriques.com — DumpSec revendique le piratage, 198 Go de données volées</a></li>
+                        <li><a href="https://www.science-et-vie.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>science-et-vie.com — Pièces jointes exfiltrées : les détails de l'attaque</a></li>
+                        <li><a href="https://www.la-croix.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>la-croix.com — Fuite de données au CNOUS : ce que l'on sait</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ARTICLE 2 : FRANCE TITRES (ANTS) -->
+            <div class="veille-article">
+                <h3>Piratage de France Titres (ANTS) : 11,7 millions de comptes exposés</h3>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Avril 2026</span>
+                    <span><i class="fas fa-microchip"></i> Thème : Cybersécurité</span>
+                    <span><i class="fas fa-building"></i> Organisme public</span>
+                </div>
+
+                <div class="article-body">
+                    <p>
+                        Le 15 avril 2026, une cyberattaque d'envergure nationale a frappé France Titres, anciennement connue sous le nom d'Agence Nationale des Titres Sécurisés (ANTS), l'organisme chargé de la gestion des titres d'identité et des documents officiels en France. L'incident a conduit à l'exposition des données personnelles d'environ <strong>11,7 millions de comptes</strong>, aussi bien des particuliers que des professionnels.
+                    </p>
+                    <p>
+                        Les données compromises comprennent les noms, prénoms, adresses e-mail, dates de naissance, et dans certains cas des numéros de téléphone et adresses postales. Les autorités ont cependant précisé que les données bancaires, mots de passe, données biométriques et pièces justificatives numérisées n'ont pas été exposés. L'enquête a rapidement permis d'identifier la faille exploitée : il s'agit d'une vulnérabilité de type <strong>IDOR</strong> (Insecure Direct Object Reference), une faille classique mais redoutable permettant d'accéder à des ressources appartenant à d'autres utilisateurs en manipulant les identifiants dans les requêtes HTTP.
+                    </p>
+                    <p>
+                        L'affaire a pris une tournure surprenante lorsque les enquêteurs ont identifié l'auteur de l'attaque : un <strong>mineur de 15 ans</strong>, opérant sous le pseudonyme <em>"breach3d"</em>, a été mis en examen pour avoir exploité seul cette vulnérabilité. Cet incident illustre à la fois la sophistication croissante des attaques menées par de très jeunes individus, et la fragilité des infrastructures publiques face à des vulnérabilités de sécurité applicative pourtant connues et documentées de longue date.
+                    </p>
+                    <p>
+                        Cet événement intervient dans un contexte de multiplication des incidents affectant des organismes d'État français, après l'attaque du CROUS début 2026. Il souligne l'urgence d'un audit systématique des API exposées sur les plateformes gouvernementales et la nécessité d'une approche "Security by Design" dans tout développement logiciel public.
+                    </p>
+                </div>
+
+                <div class="important-points">
+                    <div class="point-box">
+                        <h4><i class="fas fa-bug"></i> La faille IDOR</h4>
+                        <p>Une IDOR (Insecure Direct Object Reference) permet à un attaquant d'accéder aux données d'autres utilisateurs en modifiant simplement un identifiant dans une requête. Cette faille figure régulièrement dans le Top 10 OWASP des vulnérabilités web les plus critiques.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Risques pour les victimes</h4>
+                        <p>Avec des données aussi précises (nom, prénom, date de naissance, e-mail), les victimes sont exposées à du phishing hautement personnalisé et à des tentatives d'usurpation d'identité administrative particulièrement crédibles.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-shield-alt"></i> Mesures préventives</h4>
+                        <p>Mise en place de contrôles d'autorisation stricts côté serveur, tests de pénétration réguliers sur les API publiques, et application du principe du moindre privilège pour chaque endpoint exposé.</p>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div style="margin-top: 30px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid #e9ecef;">
+                    <p style="font-weight: 700; color: #333; margin-bottom: 12px; text-indent: 0;"><i class="fas fa-link" style="color: #667eea; margin-right: 8px;"></i>Sources</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="https://www.20minutes.fr" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>20minutes.fr — Cyberattaque France Titres, avril 2026</a></li>
+                        <li><a href="https://www.journaldunet.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>journaldunet.com — Piratage ANTS : un mineur de 15 ans mis en examen</a></li>
+                        <li><a href="https://www.journaldugeek.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>journaldugeek.com — France Titres : 11,7 millions de comptes exposés</a></li>
+                        <li><a href="https://www.notretemps.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>notretemps.com — Données exposées : ce que l'on sait de l'attaque</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ARTICLE 3 : PLAN 200M€ CYBERSÉCURITÉ ÉTAT -->
+            <div class="veille-article">
+                <h3>Plan d'urgence cyber : l'État débloque 200 millions d'euros</h3>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Mai 2026</span>
+                    <span><i class="fas fa-microchip"></i> Thème : Cybersécurité</span>
+                    <span><i class="fas fa-landmark"></i> Politique publique</span>
+                </div>
+
+                <div class="article-body">
+                    <p>
+                        Face à une multiplication sans précédent des cyberattaques visant les organismes d'État français — avec en moyenne <strong>trois vols de données par jour</strong> enregistrés depuis le début de l'année 2026 selon le Premier ministre Sébastien Lecornu — le gouvernement a annoncé début mai 2026 un plan d'urgence articulé autour de trois axes majeurs.
+                    </p>
+                    <p>
+                        Le premier axe est financier : une enveloppe de <strong>200 millions d'euros</strong> est débloquée pour permettre aux ministères de réaliser des "audits flash", d'identifier leurs vulnérabilités et de renforcer la protection de leurs systèmes d'information. Le second axe est organisationnel : la création d'une <strong>Autorité nationale pour le numérique et l'IA</strong>, née de la fusion de la DINUM et de la DITP, placée directement auprès du Premier ministre, afin de casser le fonctionnement en "silos" des infrastructures numériques de l'État.
+                    </p>
+                    <p>
+                        Le troisième axe est technique : le recours accru à l'<strong>intelligence artificielle</strong> pour la détection de vulnérabilités et la mise en place d'exercices d'auto-attaque (<em>red teaming</em>) pour tester la résilience des systèmes avant qu'ils ne soient exploités. La ministre Anne Le Hénanff a néanmoins tempéré ces annonces, soulignant que ces 200 millions restent insuffisants à long terme face à un sous-investissement chronique : certains ministères ne consacrent que 1 à 5 % de leur budget IT à la cybersécurité, loin du seuil recommandé de 10 %.
+                    </p>
+                </div>
+
+                <div class="important-points">
+                    <div class="point-box">
+                        <h4><i class="fas fa-euro-sign"></i> 200 M€ d'urgence</h4>
+                        <p>Ce financement couvre des audits flash et des mises à niveau de sécurité dans les ministères. Une mesure nécessaire mais jugée insuffisante à long terme par les experts.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-robot"></i> L'IA au service de la défense</h4>
+                        <p>L'utilisation de l'IA pour détecter automatiquement les vulnérabilités et simuler des attaques (<em>red teaming automatisé</em>) représente une évolution majeure des stratégies de cyberdéfense étatique.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-sitemap"></i> Nouvelle gouvernance numérique</h4>
+                        <p>La fusion DINUM/DITP vise à centraliser la gestion des infrastructures numériques de l'État pour éviter les angles morts sécuritaires liés au cloisonnement des administrations.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid #e9ecef;">
+                    <p style="font-weight: 700; color: #333; margin-bottom: 12px; text-indent: 0;"><i class="fas fa-link" style="color: #667eea; margin-right: 8px;"></i>Sources</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="https://www.info.gouv.fr" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>info.gouv.fr — Annonces du Premier ministre sur la cybersécurité de l'État</a></li>
+                        <li><a href="https://www.lesnumeriques.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>lesnumeriques.com — Plan cyber d'urgence : 200 millions pour les ministères</a></li>
+                        <li><a href="https://www.banquedesterritoires.fr" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>banquedesterritoires.fr — Détail du plan de financement cybersécurité</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ARTICLE 4 : ANFR & FF BASKETBALL -->
+            <div class="veille-article">
+                <h3>Vague de cyberattaques : l'ANFR et la FF Basketball également ciblées</h3>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> Mai 2026</span>
+                    <span><i class="fas fa-microchip"></i> Thème : Cybersécurité</span>
+                    <span><i class="fas fa-network-wired"></i> Organismes publics &amp; sportifs</span>
+                </div>
+
+                <div class="article-body">
+                    <p>
+                        La vague de cyberattaques frappant la France en 2026 ne se limite pas aux organismes d'État centraux. L'<strong>Agence Nationale des Fréquences (ANFR)</strong>, chargée de la gestion du spectre radioélectrique en France, ainsi que la <strong>Fédération Française de Basketball (FFBB)</strong> ont toutes deux subi des violations de données exposant des informations personnelles de leurs utilisateurs, licenciés et représentants légaux.
+                    </p>
+                    <p>
+                        Ces incidents illustrent un phénomène désormais systémique : aucun secteur n'est épargné, qu'il soit régalien, éducatif ou sportif. Les attaquants ciblent en priorité les organismes dont les systèmes d'information sont anciens, peu maintenus ou exposés sur Internet sans mécanismes de protection modernes. La FFBB, comme beaucoup de fédérations sportives, dispose de ressources IT limitées, ce qui en fait une cible relativement facile pour des groupes organisés.
+                    </p>
+                    <p>
+                        Ces attaques s'inscrivent dans le contexte alarmant relevé par le Premier ministre : la France enregistre en moyenne <strong>trois incidents de vol de données par jour</strong> depuis le début de l'année 2026. Ce rythme place le pays parmi les cibles les plus actives en Europe et justifie le plan d'urgence cybersécurité annoncé par le gouvernement ce même mois.
+                    </p>
+                </div>
+
+                <div class="important-points">
+                    <div class="point-box">
+                        <h4><i class="fas fa-crosshairs"></i> Élargissement des cibles</h4>
+                        <p>Les attaquants ne visent plus seulement les grandes administrations. Les fédérations sportives, agences de régulation et organismes de taille intermédiaire sont désormais des cibles privilégiées en raison de leurs moindres capacités défensives.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-database"></i> Données sportives exposées</h4>
+                        <p>Les bases de licenciés des fédérations contiennent des données très précises : identité, contacts, parfois données médicales. Leur exposition constitue un risque sérieux d'usurpation d'identité et de phishing ciblé.</p>
+                    </div>
+                    <div class="point-box">
+                        <h4><i class="fas fa-lightbulb"></i> Leçon pour les développeurs</h4>
+                        <p>La sécurisation n'est pas réservée aux grandes structures. Toute application web gérant des données personnelles, même pour une association ou une PME, doit intégrer les bonnes pratiques RGPD et OWASP dès la conception.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid #e9ecef;">
+                    <p style="font-weight: 700; color: #333; margin-bottom: 12px; text-indent: 0;"><i class="fas fa-link" style="color: #667eea; margin-right: 8px;"></i>Sources</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="https://www.lesnumeriques.com" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>lesnumeriques.com — ANFR et FF Basketball parmi les nouvelles victimes</a></li>
+                        <li><a href="https://www.info.gouv.fr" target="_blank" style="color: #667eea; text-decoration: none; font-size: 14px;"><i class="fas fa-external-link-alt" style="font-size: 11px; margin-right: 6px;"></i>info.gouv.fr — Bilan des cyberincidents : 3 vols de données par jour en France</a></li>
+                    </ul>
                 </div>
             </div>
 
